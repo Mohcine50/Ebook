@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardElevation="3dp"
+    card_view:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:gravity="center|top">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+        <com.duongkk.ebook.view.customviews.CustomTextView
+            android:id="@+id/tv_title"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:text="Android Book cooking dinner"
+            style="@style/style_text_title"
+         />
+        <com.duongkk.ebook.view.customviews.CustomTextView
+            android:id="@+id/tv_auth"
+            android:text="Android Book cooking dinner"
+            style="@style/style_text_auth"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
